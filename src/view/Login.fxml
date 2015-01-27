@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="400.0" styleClass="bg" stylesheets="@Login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="26.0" layoutY="306.0" prefHeight="32.0" prefWidth="272.0" AnchorPane.bottomAnchor="362.0" AnchorPane.topAnchor="306.0" />
+      <PasswordField layoutX="26.0" layoutY="363.0" prefHeight="32.0" prefWidth="272.0" />
+      <ImageView fitHeight="25.0" fitWidth="40.0" layoutX="327.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="25.0" fitWidth="40.0" layoutX="327.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="26.0" layoutY="432.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="325.0" text="Button" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="49.0" />
+      <HBox layoutX="104.0" layoutY="540.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="51.0" layoutX="124.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="51.0" layoutX="175.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="51.0" layoutX="233.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
