@@ -21,12 +21,12 @@ public class main extends Application {
 		this.primStage = primaryStage;
 		this.primStage.setTitle("Brahms apuestas");
 		
-		showRootView();
+		setRoot();
 		
 	}
 	
 	
-	public void showRootView(){
+	public void setRoot(){
 		
 		try{
 			FXMLLoader loader = new FXMLLoader();
@@ -45,6 +45,11 @@ public class main extends Application {
 		
 	}
 	
+	public void doSomething(){
+		
+		System.out.println("But clicked");
+		
+	}
 
 	
 	 /**
