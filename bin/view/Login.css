@@ -6,3 +6,6 @@
 	-fx-background-image: url("left_bar.png");
 }
 
+.selectorBg {
+	-fx-background-image: url("fondo_selector.png");
+}

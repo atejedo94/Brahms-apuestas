@@ -78,6 +78,31 @@ public class Main extends Application {
 		
 	}
 	
+	public void initInvestments(){
+		
+		try{
+			FXMLLoader loader = new FXMLLoader();
+
+			loader.setLocation(Main.class.getResource("Investments.fxml"));
+		
+			AnchorPane page = (AnchorPane) loader.load();
+			
+			Scene scene = new Scene(page);
+			primStage.setScene(scene);
+			
+			InvestmentController controller = loader.getController();
+			controller.setMain(this);
+			
+			primStage.show();
+			
+	}catch (IOException ex) {
+        System.out.println(ex.getMessage());
+   }catch (Exception e){
+       System.out.println(e.getMessage());
+   }
+		
+	}
+	
 	 /**
      * Returns the main stage.
      * @return
