@@ -1,3 +1,11 @@
 .bg {
 	-fx-background-image: url("bg.png");
+} 
+
+.leftBar {
+	-fx-background-image: url("left_bar.png");
+}
+
+.selectorBg {
+	-fx-background-image: url("fondo_selector.png");
 }
