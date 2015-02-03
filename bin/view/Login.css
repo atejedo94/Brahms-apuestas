@@ -9,3 +9,7 @@
 .selectorBg {
 	-fx-background-image: url("fondo_selector.png");
 }
+
+.buyInvestBg {
+	-fx-background-image: url("buyInvest.png");
+}

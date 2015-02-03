@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</BorderPane>
 
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="276.0" styleClass="buyInvestBg" stylesheets="@../../bin/view/Login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.buyInvestController">
+   <children>
+      <Button layoutX="34.0" layoutY="82.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="36.0" prefWidth="95.0" style="-fx-background-color: transparent;" />
+      <Button layoutX="152.0" layoutY="82.0" mnemonicParsing="false" onAction="#onAccept" prefHeight="36.0" prefWidth="95.0" style="-fx-background-color: transparent;" />
+      <TextField layoutX="106.0" layoutY="22.0" prefHeight="25.0" prefWidth="115.0" text="€" />
+   </children>
+</AnchorPane>
