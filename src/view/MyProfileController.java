@@ -6,19 +6,24 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
-public class SportBetsController implements Initializable{
-	
-	private Main main;
+public class MyProfileController implements Initializable{
+
+private Main main;
 	
 	public void setMain(Main main){
 		this.main=main;
 	}
 	
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		
 	}
 	
+	@FXML
+	private void onClickSportBets(){
+		main.initSportBets();
+	}
 	
 	@FXML
 	private void onClickInvest(){
@@ -39,10 +44,5 @@ public class SportBetsController implements Initializable{
 	private void onClickLogOut(){
 		main.setRoot();
 	}
-
 	
-
-
-	
-
 }

@@ -18,20 +18,19 @@
                   <Font size="21.0" />
                </font>
             </Button>
-            <Button layoutY="113.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="187.0" style="-fx-background-color: transparent;" text="My Profile" textFill="WHITE">
+            <Button layoutY="113.0" mnemonicParsing="false" onAction="#onClickMyProfile" prefHeight="51.0" prefWidth="187.0" style="-fx-background-color: transparent;" text="My Profile" textFill="WHITE">
                <font>
                   <Font size="21.0" />
                </font>
             </Button>
-            <Button layoutX="-1.0" layoutY="169.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="187.0" style="-fx-background-color: transparent;" text="Other Users" textFill="WHITE">
+            <Button layoutX="-1.0" layoutY="169.0" mnemonicParsing="false" onAction="#onClickMyProfile" prefHeight="51.0" prefWidth="187.0" style="-fx-background-color: transparent;" text="Other Users" textFill="WHITE">
                <font>
                   <Font size="21.0" />
                </font>
             </Button>
-            <Button layoutX="14.0" layoutY="407.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: transparent;" text="Log Out" textFill="WHITE" />
+            <Button layoutX="14.0" layoutY="407.0" mnemonicParsing="false" onAction="#onClickLogOut" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: transparent;" text="Log Out" textFill="WHITE" />
          </children>
       </Pane>
-      <Line endX="520.0" layoutX="298.0" layoutY="45.0" startX="-100.0" strokeWidth="0.5" />
       <Pagination layoutX="198.0" layoutY="45.0" prefHeight="400.0" prefWidth="595.0" styleClass="selectorBg" stylesheets="@../../bin/view/Login.css" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
       <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="#onClickSportBets" prefHeight="51.0" prefWidth="187.0" style="-fx-background-color: transparent;" styleClass="leftButtons" stylesheets="@../../bin/view/Login.css" text="Sport Bets" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <font>
@@ -109,5 +108,6 @@
       <Label layoutX="570.0" layoutY="318.0" prefHeight="17.0" prefWidth="82.0" text="Gold per kg." />
       <Label layoutX="570.0" layoutY="345.0" prefHeight="17.0" prefWidth="92.0" text="Actual price: 23€" />
       <Label layoutX="570.0" layoutY="372.0" prefHeight="17.0" prefWidth="100.0" text="Ends: Sat. 16 Dec." />
+      <Line endX="520.0" layoutX="285.0" layoutY="42.0" startX="-100.0" strokeWidth="0.5" />
    </children>
 </AnchorPane>

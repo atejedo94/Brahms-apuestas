@@ -29,5 +29,19 @@ private Main main;
 	private void onClickInvest(){
 		main.initBuyInvest();
 	}
+
+	@FXML
+	private void onClickMyProfile(){
+		main.initMyProfile();
+	}
 	
+	@FXML
+	private void onClickOtherUsers(){
+		main.initOtherUsers();
+	}
+	
+	@FXML
+	private void onClickLogOut(){
+		main.setRoot();
+	}
 }

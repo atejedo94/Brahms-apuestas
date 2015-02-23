@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="798.0" stylesheets="@../../bin/view/Login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MyProfileController">
+   <children>
+      <Pane layoutY="-3.0" prefHeight="447.0" prefWidth="187.0" styleClass="leftBar" stylesheets="@../../bin/view/Login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="611.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="4.0" layoutY="62.0" mnemonicParsing="false" onAction="#onClickInvest" prefHeight="51.0" prefWidth="187.0" style="-fx-background-color: transparent;" text="Investments" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button layoutY="113.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="187.0" style="-fx-background-color: transparent;" text="My Profile" textFill="WHITE" underline="true">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button layoutX="-1.0" layoutY="169.0" mnemonicParsing="false" onAction="#onClickOtherUsers" prefHeight="51.0" prefWidth="187.0" style="-fx-background-color: transparent;" text="Other Users" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="407.0" mnemonicParsing="false" onAction="#onClickLogOut" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: transparent;" text="Log Out" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Line endX="520.0" layoutX="288.0" layoutY="40.0" startX="-100.0" strokeWidth="0.5" />
+      <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="#onClickSportBets" prefHeight="51.0" prefWidth="187.0" style="-fx-background-color: transparent;" styleClass="leftButtons" stylesheets="@../../bin/view/Login.css" text="Sport Bets" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Segoe UI" size="21.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Label layoutX="738.0" layoutY="16.0" text="0€" />
+      <Label layoutX="631.0" layoutY="16.0" text="Current money:" />
+      <Text layoutX="209.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My earnings: " wrappingWidth="82.0" />
+      <Text layoutX="209.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My losts:" wrappingWidth="82.0" />
+      <Text layoutX="209.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Times i won  sport bets :" wrappingWidth="105.0" />
+      <Text layoutX="209.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Times i lost sport bets :" wrappingWidth="105.0" />
+      <LineChart layoutX="399.0" layoutY="98.0" prefHeight="251.0" prefWidth="389.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Text layoutX="338.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="338.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="338.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="338.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="209.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User:" wrappingWidth="82.0" />
+      <Text layoutX="250.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>
