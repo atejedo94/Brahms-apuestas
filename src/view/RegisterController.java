@@ -6,7 +6,7 @@ import javafx.scene.control.TextField;
 
 public class RegisterController {
 
-	User user;
+	public static User user = new User(0, 0, 0, 0, 0, null, null);
 	Main main;
 
 	@FXML
@@ -21,16 +21,15 @@ public class RegisterController {
 
 	@FXML
 	public void onClickRegister() {
-
-		User u1 = new User(0, 0, 0, 0, 0, null, null);
  
 
-		u1.setUser(username.getText());
-		u1.setPassword(password.getText());
+		user.setUser(username.getText());
+		user.setPassword(password.getText());
 
-		System.out.println(user.getUser());
-		System.out.println(user.getPassword());
+//		System.out.println(user.getUser());
 
+		System.out.println(user.toString());
+		
 		main.setRoot();
 
 	}

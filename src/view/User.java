@@ -2,7 +2,7 @@ package view;
 
 public class User {
 	
-	public int currentMoney, myEarnings, myLosts, timesIWon,timesILost;
+	private int currentMoney, myEarnings, myLosts, timesIWon,timesILost;
 	public String user,password;
 
 	
@@ -59,6 +59,13 @@ public class User {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	@Override
+	public String toString() {
+		return "User [currentMoney=" + currentMoney + ", myEarnings="
+				+ myEarnings + ", myLosts=" + myLosts + ", timesIWon="
+				+ timesIWon + ", timesILost=" + timesILost + ", user=" + user
+				+ ", password=" + password + "]";
 	}
 	
 	

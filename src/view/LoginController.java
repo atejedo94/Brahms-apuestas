@@ -14,8 +14,12 @@ public class LoginController implements Initializable{
 		this.main=main;
 	}
 
+	
+	
 	@FXML
 	private void login(){
+		
+		
 		main.initSportBets();
 	}
 	
