@@ -113,7 +113,7 @@ public class Main extends Application {
 
 			buyInvestController controller = loader.getController();
 			controller.setMain(this);
-			
+
 			primStage.setResizable(false);
 			primStage.show();
 
@@ -133,13 +133,12 @@ public class Main extends Application {
 
 			Scene scene = new Scene(page);
 			primStage.setScene(scene);
-			
+
 			MyProfileController controller = loader.getController();
 			controller.setMain(this);
-			
+
 			primStage.setResizable(false);
 			primStage.show();
-			
 
 		} catch (IOException ex) {
 			System.out.println(ex.getMessage());
@@ -148,10 +147,10 @@ public class Main extends Application {
 		}
 
 	}
-	
-	public void initOtherUsers(){
-		try{
-			
+
+	public void initOtherUsers() {
+		try {
+
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("OtherUsers.fxml"));
 
@@ -159,20 +158,43 @@ public class Main extends Application {
 
 			Scene scene = new Scene(page);
 			primStage.setScene(scene);
-			
+
 			OtherUsersController controller = loader.getController();
 			controller.setMain(this);
-			
+
 			primStage.setResizable(false);
 			primStage.show();
-			
-			
-		}catch (IOException ex) {
+
+		} catch (IOException ex) {
 			System.out.println(ex.getMessage());
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		
+
+	}
+
+	public void initRegister() {
+		try {
+
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Main.class.getResource("Register.fxml"));
+
+			AnchorPane page = (AnchorPane) loader.load();
+
+			Scene scene = new Scene(page);
+			primStage.setScene(scene);
+
+			RegisterController controller = loader.getController();
+			controller.setMain(this);
+
+			primStage.setResizable(false);
+			primStage.show();
+
+		} catch (IOException ex) {
+			System.out.println(ex.getMessage());
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 	/**

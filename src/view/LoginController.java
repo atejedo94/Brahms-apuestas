@@ -18,6 +18,11 @@ public class LoginController implements Initializable{
 	private void login(){
 		main.initSportBets();
 	}
+	
+	@FXML
+	public void onClickRegister() {
+		main.initRegister();
+	}
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
