@@ -26,9 +26,7 @@ public class RegisterController {
 		user.setUser(username.getText());
 		user.setPassword(password.getText());
 
-//		System.out.println(user.getUser());
-
-		System.out.println(user.toString());
+//		System.out.println(user.toString());
 		
 		main.setRoot();
 
