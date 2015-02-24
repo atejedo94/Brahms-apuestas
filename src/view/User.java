@@ -3,13 +3,14 @@ package view;
 public class User {
 	
 	private int currentMoney, myEarnings, myLosts, timesIWon,timesILost;
-	public String user,password;
+	private String user,password;
+	private boolean admin;
 
 	
 	
 	
 	public User(int currentMoney, int myEarnings, int myLosts, int timesIWon,
-			int timesILost, String user, String password) {
+			int timesILost, String user, String password, boolean admin) {
 		this.currentMoney = currentMoney;
 		this.myEarnings = myEarnings;
 		this.myLosts = myLosts;
@@ -17,6 +18,7 @@ public class User {
 		this.timesILost = timesILost;
 		this.user = user;
 		this.password = password;
+		this.admin = admin;
 	}
 	public int getCurrentMoney() {
 		return currentMoney;
@@ -66,6 +68,12 @@ public class User {
 				+ myEarnings + ", myLosts=" + myLosts + ", timesIWon="
 				+ timesIWon + ", timesILost=" + timesILost + ", user=" + user
 				+ ", password=" + password + "]";
+	}
+	public boolean isAdmin() {
+		return admin;
+	}
+	public void setAdmin(boolean admin) {
+		this.admin = admin;
 	}
 	
 	

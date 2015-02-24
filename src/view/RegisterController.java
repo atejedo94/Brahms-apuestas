@@ -6,7 +6,7 @@ import javafx.scene.control.TextField;
 
 public class RegisterController {
 
-	public static User user = new User(0, 0, 0, 0, 0, null, null);
+	public static User user = new User(0, 0, 0, 0, 0, null, null, false);
 	Main main;
 
 	@FXML

@@ -43,7 +43,7 @@
       </Button>
       <Label layoutX="738.0" layoutY="16.0" text="0€" />
       <Label layoutX="631.0" layoutY="16.0" text="Current money:" />
-      <Button layoutX="350.0" layoutY="78.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="121.0" text="Bet" textAlignment="CENTER">
+      <Button layoutX="350.0" layoutY="78.0" mnemonicParsing="false" onAction="#onClickBet" prefHeight="71.0" prefWidth="121.0" text="Bet" textAlignment="CENTER">
          <effect>
             <DropShadow />
          </effect>
@@ -52,7 +52,7 @@
          </font>
       </Button>
       <Label layoutX="304.0" layoutY="51.0" prefHeight="17.0" prefWidth="167.0" text="Olympiakos vs Bayern Munich" />
-      <Button layoutX="663.0" layoutY="78.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="121.0" text="Bet" textAlignment="CENTER">
+      <Button layoutX="663.0" layoutY="78.0" mnemonicParsing="false" onAction="#onClickBet" prefHeight="71.0" prefWidth="121.0" text="Bet" textAlignment="CENTER">
          <effect>
             <DropShadow />
          </effect>
@@ -60,7 +60,7 @@
             <Font name="System Italic" size="28.0" />
          </font>
       </Button>
-      <Button layoutX="350.0" layoutY="198.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="121.0" text="Bet" textAlignment="CENTER">
+      <Button layoutX="350.0" layoutY="198.0" mnemonicParsing="false" onAction="#onClickBet" prefHeight="71.0" prefWidth="121.0" text="Bet" textAlignment="CENTER">
          <effect>
             <DropShadow />
          </effect>
@@ -68,7 +68,7 @@
             <Font name="System Italic" size="28.0" />
          </font>
       </Button>
-      <Button layoutX="663.0" layoutY="198.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="121.0" text="Bet" textAlignment="CENTER">
+      <Button layoutX="663.0" layoutY="198.0" mnemonicParsing="false" onAction="#onClickBet" prefHeight="71.0" prefWidth="121.0" text="Bet" textAlignment="CENTER">
          <effect>
             <DropShadow />
          </effect>
@@ -76,7 +76,7 @@
             <Font name="System Italic" size="28.0" />
          </font>
       </Button>
-      <Button layoutX="350.0" layoutY="318.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="121.0" text="Bet" textAlignment="CENTER">
+      <Button layoutX="350.0" layoutY="318.0" mnemonicParsing="false" onAction="#onClickBet" prefHeight="71.0" prefWidth="121.0" text="Bet" textAlignment="CENTER">
          <effect>
             <DropShadow />
          </effect>
@@ -84,7 +84,7 @@
             <Font name="System Italic" size="28.0" />
          </font>
       </Button>
-      <Button layoutX="663.0" layoutY="318.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="121.0" text="Bet" textAlignment="CENTER">
+      <Button layoutX="663.0" layoutY="318.0" mnemonicParsing="false" onAction="#onClickBet" prefHeight="71.0" prefWidth="121.0" text="Bet" textAlignment="CENTER">
          <effect>
             <DropShadow />
          </effect>
@@ -92,22 +92,34 @@
             <Font name="System Italic" size="28.0" />
          </font>
       </Button>
-      <Label layoutX="304.0" layoutY="175.0" prefHeight="17.0" prefWidth="167.0" text="Olympiakos vs Bayern Munich" />
-      <Label layoutX="304.0" layoutY="293.0" prefHeight="17.0" prefWidth="167.0" text="Olympiakos vs Bayern Munich" />
-      <Label layoutX="611.0" layoutY="51.0" prefHeight="17.0" prefWidth="167.0" text="Olympiakos vs Bayern Munich" />
-      <Label layoutX="611.0" layoutY="175.0" prefHeight="17.0" prefWidth="167.0" text="Olympiakos vs Bayern Munich" />
-      <Label layoutX="611.0" layoutY="293.0" prefHeight="17.0" prefWidth="167.0" text="Olympiakos vs Bayern Munich" />
-      <Label layoutX="209.0" layoutY="89.0" text="Actual price: 0€" />
-      <Label layoutX="209.0" layoutY="215.0" text="Actual price: 0€" />
-      <Label layoutX="209.0" layoutY="337.0" text="Actual price: 0€" />
-      <Label layoutX="508.0" layoutY="89.0" text="Actual price: 0€" />
-      <Label layoutX="508.0" layoutY="215.0" text="Actual price: 0€" />
-      <Label layoutX="508.0" layoutY="337.0" text="Actual price: 0€" />
+      <Label layoutX="304.0" layoutY="175.0" prefHeight="17.0" prefWidth="167.0" text="Getafe vs Manchester UD" />
+      <Label layoutX="304.0" layoutY="293.0" prefHeight="17.0" prefWidth="167.0" text="Borussia vs Napoles" />
+      <Label layoutX="611.0" layoutY="51.0" prefHeight="17.0" prefWidth="167.0" text="Paris SG vs Roma" />
+      <Label layoutX="611.0" layoutY="175.0" prefHeight="17.0" prefWidth="167.0" text="Valencia vs Bilbao" />
+      <Label layoutX="611.0" layoutY="293.0" prefHeight="17.0" prefWidth="167.0" text="Milan vs Liverpool" />
+      <Label layoutX="209.0" layoutY="89.0" text="Actual price:" />
+      <Label layoutX="209.0" layoutY="215.0" text="Actual price: " />
+      <Label layoutX="209.0" layoutY="337.0" text="Actual price: " />
+      <Label layoutX="508.0" layoutY="89.0" text="Actual price:" />
+      <Label layoutX="508.0" layoutY="215.0" text="Actual price: " />
+      <Label layoutX="508.0" layoutY="337.0" text="Actual price:" />
       <Label layoutX="209.0" layoutY="114.0" text="Ends: Sat. 16 Dec." />
       <Label layoutX="209.0" layoutY="242.0" text="Ends: Sat. 16 Dec." />
       <Label layoutX="209.0" layoutY="364.0" text="Ends: Sat. 16 Dec." />
       <Label layoutX="508.0" layoutY="114.0" text="Ends: Sat. 16 Dec." />
       <Label layoutX="508.0" layoutY="242.0" text="Ends: Sat. 16 Dec." />
       <Label layoutX="508.0" layoutY="364.0" text="Ends: Sat. 16 Dec." />
+      <Label fx:id="label1" layoutX="284.0" layoutY="89.0" prefHeight="17.0" prefWidth="37.0" text="€" />
+      <Label fx:id="label3" layoutX="290.0" layoutY="215.0" prefHeight="17.0" prefWidth="37.0" text="€" />
+      <Label fx:id="label5" layoutX="284.0" layoutY="337.0" prefHeight="17.0" prefWidth="37.0" text="€" />
+      <Label fx:id="label2" layoutX="601.0" layoutY="89.0" prefHeight="17.0" prefWidth="37.0" text="€" />
+      <Label fx:id="label4" layoutX="601.0" layoutY="215.0" prefHeight="17.0" prefWidth="37.0" text="€" />
+      <Label fx:id="label6dr" layoutX="601.0" layoutY="337.0" prefHeight="17.0" prefWidth="37.0" text="€" />
+      <Label layoutX="327.0" layoutY="89.0" text="€" />
+      <Label layoutX="331.0" layoutY="215.0" text="€" />
+      <Label layoutX="331.0" layoutY="337.0" text="€" />
+      <Label layoutX="647.0" layoutY="89.0" text="€" />
+      <Label layoutX="647.0" layoutY="215.0" text="€" />
+      <Label layoutX="647.0" layoutY="337.0" text="€" />
    </children>
 </AnchorPane>

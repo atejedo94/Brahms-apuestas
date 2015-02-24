@@ -41,7 +41,7 @@
             <Insets />
          </opaqueInsets>
       </Button>
-      <Label layoutX="738.0" layoutY="16.0" text="0€" />
+      <Label layoutX="738.0" layoutY="16.0" text="€" />
       <Label layoutX="631.0" layoutY="16.0" text="Current money:" />
       <Text layoutX="209.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My earnings: " wrappingWidth="82.0" />
       <Text layoutX="209.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My losts:" wrappingWidth="82.0" />
@@ -55,11 +55,12 @@
           <NumberAxis side="LEFT" />
         </yAxis>
       </LineChart>
-      <Text layoutX="338.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="338.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="338.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="338.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="209.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User:" wrappingWidth="82.0" />
-      <Text layoutX="250.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Label fx:id="usern" layoutX="356.0" layoutY="67.0" text="Label" />
+      <Text layoutX="209.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User:" wrappingWidth="82.0" />
+      <Label fx:id="myEarns" layoutX="356.0" layoutY="123.0" text="Label" />
+      <Label fx:id="sbWons" layoutX="356.0" layoutY="197.0" text="Label" />
+      <Label fx:id="myLosts" layoutX="356.0" layoutY="155.0" text="Label" />
+      <Label fx:id="sbLosts" layoutX="356.0" layoutY="254.0" text="Label" />
+
    </children>
 </AnchorPane>

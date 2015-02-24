@@ -37,6 +37,10 @@ public class LoginController implements Initializable {
 
 		if (usr.equals(RegisterController.user.getUser()) && pw.equals(RegisterController.user.getPassword())) {
 			main.initSportBets();
+		}else if(usr.equals("admin") && pw.equals("admin")){
+			RegisterController.user.setUser("Admin");
+			RegisterController.user.setAdmin(true);
+			main.initSportBets();
 
 		} else{
 			infoLabel.setText("Usuario o contraseña incorrectos");

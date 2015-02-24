@@ -65,6 +65,8 @@ public class Main extends Application {
 
 			primStage.setResizable(false);
 			primStage.show();
+			
+			controller.loadEverything();
 
 		} catch (IOException ex) {
 			System.out.println(ex.getMessage());
@@ -91,6 +93,8 @@ public class Main extends Application {
 
 			primStage.setResizable(false);
 			primStage.show();
+			
+			controller.loadEverything();
 
 		} catch (IOException ex) {
 			System.out.println(ex.getMessage());
@@ -139,6 +143,8 @@ public class Main extends Application {
 
 			primStage.setResizable(false);
 			primStage.show();
+			
+			controller.loadEverything();
 
 		} catch (IOException ex) {
 			System.out.println(ex.getMessage());
@@ -191,6 +197,31 @@ public class Main extends Application {
 			primStage.show();
 
 		} catch (IOException ex) {
+			System.out.println(ex.getMessage());
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	
+	public void initPayBet(){
+		
+		try{
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Main.class.getResource("PayForBet.fxml"));
+			
+			AnchorPane page = (AnchorPane) loader.load();
+
+			Scene scene = new Scene(page);
+			primStage.setScene(scene);
+
+			PayForBetController controller = loader.getController();
+			controller.setMain(this);
+
+			primStage.setResizable(false);
+			primStage.show();
+			
+
+		}catch (IOException ex) {
 			System.out.println(ex.getMessage());
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

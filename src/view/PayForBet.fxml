@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="250.0" prefWidth="600.0" styleClass="bg" stylesheets="@payforabet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PayForBetController">
+   <children>
+      <Label layoutX="68.0" layoutY="65.0" text="Quantity:" textFill="WHITE" />
+      <TextField layoutX="127.0" layoutY="61.0" prefHeight="25.0" prefWidth="108.0" />
+      <Text fill="WHITE" layoutX="245.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="€" />
+      <Button layoutX="346.0" layoutY="61.0" mnemonicParsing="false" text="Home" />
+      <Button layoutX="447.0" layoutY="61.0" mnemonicParsing="false" text="Away" />
+      <Button layoutX="317.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" text="Win" />
+      <Button layoutX="396.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" text="Draw" />
+      <Button layoutX="472.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" text="Lose" />
+      <Label layoutX="418.0" layoutY="65.0" text="Or" textFill="WHITE" />
+      <Button layoutX="35.0" layoutY="195.0" mnemonicParsing="false" onAction="#onClickCancel" prefHeight="25.0" prefWidth="94.0" text="Decline" />
+      <Button layoutX="151.0" layoutY="195.0" mnemonicParsing="false" onAction="#onClickAccept" prefHeight="25.0" prefWidth="94.0" text="Accept" />
+   </children>
+</AnchorPane>
